@@ -1,0 +1,15 @@
+<h1>Search User ID to get their photos</h1>
+<%#= 
+This form asks for user id input and then when you click submit
+it should return the list of photos from that user ID on flickr
+%>
+<% if params[:user_id].empty? %>
+    <%= render "search_form" %>
+<% else %>
+    <p>Flickr API searcher is displaying <%= params[:user_id] %>'s Photos</p>
+    <% @photos.each do |photo| %>
+        <img src="<%= Flickr.url(photo) %>" alt="User Image">
+    <% end %>
+    <%= render "search_form" %>
+<% end %>
+
