@@ -1,24 +1,9 @@
-# README
+# Photo Widget
+* This project creates a simple photo widget that allows you to display photos from you or someone else's Flickr feed.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
+## How Its Made
+* Rails, ruby, html
 * Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Figaro gem for configuring environment variables
+* Flickr gem for Flickr API
+* Simple search form that takes the ID of a flickr user and displays the photos from that user.

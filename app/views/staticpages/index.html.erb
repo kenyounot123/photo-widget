@@ -3,7 +3,7 @@
 This form asks for user id input and then when you click submit
 it should return the list of photos from that user ID on flickr
 %>
-<% if params[:user_id].empty? %>
+<% if params[:user_id].blank? %>
     <%= render "search_form" %>
 <% else %>
     <p>Flickr API searcher is displaying <%= params[:user_id] %>'s Photos</p>
